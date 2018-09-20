@@ -1,9 +1,5 @@
-test: echo 1
-deploy:
-  app: forker
-  provider: heroku
-  api_key:
-    secure: PTxC5caxZqq36nFyD4Q0gNA0ICQJ9MnW8qeoeuRScQiuJmFh76thzZQ4YAmLj04JfcAho0JuGkZPbB//CsIiBx8n+gevEyRZvoHqSOBgQNPp2mh/DfmzwzjbNhnyKADvi9lWiJjhgEIHLfrvKCSuBP0q7xOX/v6z3K0KSncUlC0VFn6tMRyIZIyzVBm51sxMmRZJIMjHyMc4d4zztiuwZIUxcXVEmrAT71WXcpyKcGwOLyLtn7WFc8/LznBP11pWvi25Kt4psR6pEaEWV5knvuAskhBsh/YvAxLmDk+vA/ySSdsWwP6OAhyohS354HKV+KrZPQbdlOCoZlFiW1F/za82+xmJ+PFlexEJhpXdOslTDLFweX4XcjLrWeiKpejnCzxzmqgnoiA0Q7CV4DLXXSJ0Qv6BPYCdfuK3pVBow02fLoMSOB854SGJnbPNQqPnyaMOEIV9zhOiBo6ToIx0ORx3BR7dSUSE9WKZBrpXTDSM938SW+wsMBIZkHGywXHFZTIJwT1ik0SSv0lCA1i2VlaKqIIhYHGeDQDzDD1Be4QPHhGoi6a5ygHYsysvIcrMdYkrHeuUI61HNmHovJpmBFze7VvqPZq13lNhUQESZQTxsGJZ1lRV+YarEW4lsnVCcKEVm7IMn8BhQjbhJkKvDbWM/YcGrMOzzSiHuYCJPmw=
-  run:
-  - version
-  - restart
+language: nodejs
+
+before_install:
+  - heroku -v
+  - heroku update
